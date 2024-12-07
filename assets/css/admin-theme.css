@@ -102,6 +102,25 @@ textarea {
     background: #fff !important;
 }
 
+/* Dashboard Widgets */
+.postbox {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.postbox .hndle {
+    border-bottom: 1px solid #E0E5F2;
+    padding: 16px;
+    color: #2B3674;
+    font-weight: 700;
+}
+
+.postbox .inside {
+    padding: 16px;
+}
+
 /* Notice and Alert Styles */
 .notice {
     border-radius: 16px;
@@ -109,7 +128,6 @@ textarea {
     background: #fff;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
     margin: 20px 20px 20px 0;
-    padding: 16px;
 }
 
 .notice-success {
@@ -124,53 +142,14 @@ textarea {
     border-left-color: #FFB547;
 }
 
-/* Dashboard Widgets */
-#dashboard-widgets .postbox {
-    background: #fff;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
-}
-
-.postbox .hndle {
-    border-bottom: 1px solid #E0E5F2;
-    padding: 16px;
-    font-size: 16px;
-    color: #2B3674;
-}
-
-.postbox .inside {
-    padding: 16px;
-}
-
-/* Admin Menu Icons */
-#adminmenu div.wp-menu-image {
-    filter: grayscale(100%);
-}
-
-#adminmenu li.current div.wp-menu-image,
-#adminmenu li:hover div.wp-menu-image {
-    filter: none;
-}
-
-/* Additional UI Elements */
-.tablenav {
-    margin: 16px 0;
-}
-
-.subsubsub {
-    margin: 12px 0;
-    padding: 8px 0;
-}
-
-.subsubsub a {
-    color: #2B3674;
-    padding: 4px 12px;
-    border-radius: 8px;
-}
-
-.subsubsub a.current {
-    background: #4318FF;
-    color: #fff;
-    font-weight: 500;
-}
+/* Custom Menu Icons */
+.wowp-icon-dashboard::before { content: "\f226"; }
+.wowp-icon-posts::before { content: "\f109"; }
+.wowp-icon-media::before { content: "\f104"; }
+.wowp-icon-pages::before { content: "\f105"; }
+.wowp-icon-comments::before { content: "\f101"; }
+.wowp-icon-appearance::before { content: "\f100"; }
+.wowp-icon-plugins::before { content: "\f106"; }
+.wowp-icon-users::before { content: "\f110"; }
+.wowp-icon-tools::before { content: "\f107"; }
+.wowp-icon-settings::before { content: "\f108"; }
