@@ -102,25 +102,6 @@ textarea {
     background: #fff !important;
 }
 
-/* Dashboard Widgets */
-.postbox {
-    border-radius: 16px;
-    border: none;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
-    margin-bottom: 20px;
-}
-
-.postbox .hndle {
-    border-bottom: 1px solid #E0E5F2;
-    padding: 16px;
-    color: #2B3674;
-    font-weight: 700;
-}
-
-.postbox .inside {
-    padding: 16px;
-}
-
 /* Notice and Alert Styles */
 .notice {
     border-radius: 16px;
@@ -141,15 +122,3 @@ textarea {
 .notice-warning {
     border-left-color: #FFB547;
 }
-
-/* Custom Menu Icons */
-.wowp-icon-dashboard::before { content: "\f226"; }
-.wowp-icon-posts::before { content: "\f109"; }
-.wowp-icon-media::before { content: "\f104"; }
-.wowp-icon-pages::before { content: "\f105"; }
-.wowp-icon-comments::before { content: "\f101"; }
-.wowp-icon-appearance::before { content: "\f100"; }
-.wowp-icon-plugins::before { content: "\f106"; }
-.wowp-icon-users::before { content: "\f110"; }
-.wowp-icon-tools::before { content: "\f107"; }
-.wowp-icon-settings::before { content: "\f108"; }
