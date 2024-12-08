@@ -37,6 +37,16 @@
     color: #fff;
 }
 
+#adminmenu li.menu-top > a {
+    padding: 12px 16px;
+}
+
+#adminmenu li.wp-has-current-submenu .wp-submenu {
+    background: #F4F7FE;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
 /* Cards and Containers */
 .wrap {
     background: #fff;
@@ -102,6 +112,20 @@ textarea {
     background: #fff !important;
 }
 
+/* Dashboard Widgets */
+#dashboard-widgets .postbox {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+#dashboard-widgets .postbox h2 {
+    color: #2B3674;
+    font-weight: 600;
+    padding: 16px;
+}
+
 /* Notice and Alert Styles */
 .notice {
     border-radius: 16px;
@@ -109,6 +133,7 @@ textarea {
     background: #fff;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
     margin: 20px 20px 20px 0;
+    padding: 16px;
 }
 
 .notice-success {
@@ -121,4 +146,38 @@ textarea {
 
 .notice-warning {
     border-left-color: #FFB547;
+}
+
+/* Tabs */
+.nav-tab-wrapper {
+    border-bottom: 1px solid #E0E5F2;
+}
+
+.nav-tab {
+    border: none;
+    background: none;
+    color: #2B3674;
+    font-weight: 500;
+    padding: 12px 24px;
+    margin: 0;
+}
+
+.nav-tab-active {
+    border-bottom: 2px solid #4318FF;
+    color: #4318FF;
+}
+
+/* Admin Menu Icons */
+.wowp-icon-dashboard,
+.wowp-icon-posts,
+.wowp-icon-media,
+.wowp-icon-pages,
+.wowp-icon-comments,
+.wowp-icon-appearance,
+.wowp-icon-plugins,
+.wowp-icon-users,
+.wowp-icon-tools,
+.wowp-icon-settings {
+    color: #2B3674;
+    font-size: 20px;
 }
