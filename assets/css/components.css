@@ -38,28 +38,6 @@
     opacity: 0.8;
 }
 
-/* Table Component */
-.wowp-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    margin: 20px 0;
-}
-
-.wowp-table th {
-    background: #F4F7FE;
-    padding: 12px 20px;
-    text-align: left;
-    font-weight: 700;
-    color: #2B3674;
-    border-bottom: 1px solid #E0E5F2;
-}
-
-.wowp-table td {
-    padding: 12px 20px;
-    border-bottom: 1px solid #E0E5F2;
-}
-
 /* Progress Bar */
 .wowp-progress {
     height: 8px;
@@ -75,30 +53,107 @@
     transition: width 0.3s ease;
 }
 
-/* Form Styles */
-.wowp-form-group {
+/* Badges */
+.wowp-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.wowp-badge-success {
+    background: rgba(1, 181, 116, 0.1);
+    color: #01B574;
+}
+
+.wowp-badge-warning {
+    background: rgba(255, 181, 71, 0.1);
+    color: #FFB547;
+}
+
+.wowp-badge-error {
+    background: rgba(238, 93, 80, 0.1);
+    color: #EE5D50;
+}
+
+/* Custom Table Styles */
+.wowp-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.wowp-table th {
+    background: #F4F7FE;
+    color: #2B3674;
+    font-weight: 700;
+    padding: 16px;
+    text-align: left;
+}
+
+.wowp-table td {
+    padding: 16px;
+    border-top: 1px solid #E0E5F2;
+}
+
+/* Modal */
+.wowp-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+
+.wowp-modal {
+    background: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.wowp-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.wowp-form-label {
-    display: block;
-    margin-bottom: 8px;
+.wowp-modal-title {
+    font-size: 20px;
+    font-weight: 700;
     color: #2B3674;
-    font-weight: 500;
 }
 
-.wowp-form-input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #E0E5F2;
-    border-radius: 16px;
-    background: #fff;
-    color: #2B3674;
-    transition: all 0.3s ease;
+.wowp-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #A3AED0;
+    cursor: pointer;
 }
 
-.wowp-form-input:focus {
-    border-color: #4318FF;
-    box-shadow: 0 0 0 2px rgba(67, 24, 255, 0.1);
-    outline: none;
+/* Custom Loader */
+.wowp-loader {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #F4F7FE;
+    border-radius: 50%;
+    border-top-color: #4318FF;
+    animation: wowp-spin 1s linear infinite;
+}
+
+@keyframes wowp-spin {
+    to { transform: rotate(360deg); }
 }
