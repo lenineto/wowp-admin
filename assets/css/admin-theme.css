@@ -37,16 +37,6 @@
     color: #fff;
 }
 
-#adminmenu li.menu-top > a {
-    padding: 12px 16px;
-}
-
-#adminmenu li.wp-has-current-submenu .wp-submenu {
-    background: #F4F7FE;
-    border-radius: 8px;
-    margin: 0 10px;
-}
-
 /* Cards and Containers */
 .wrap {
     background: #fff;
@@ -112,20 +102,6 @@ textarea {
     background: #fff !important;
 }
 
-/* Dashboard Widgets */
-#dashboard-widgets .postbox {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
-    border: none;
-}
-
-#dashboard-widgets .postbox h2 {
-    color: #2B3674;
-    font-weight: 600;
-    padding: 16px;
-}
-
 /* Notice and Alert Styles */
 .notice {
     border-radius: 16px;
@@ -133,7 +109,6 @@ textarea {
     background: #fff;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
     margin: 20px 20px 20px 0;
-    padding: 16px;
 }
 
 .notice-success {
@@ -148,36 +123,56 @@ textarea {
     border-left-color: #FFB547;
 }
 
-/* Tabs */
-.nav-tab-wrapper {
-    border-bottom: 1px solid #E0E5F2;
-}
-
-.nav-tab {
+/* Dashboard Widgets */
+#dashboard-widgets .postbox {
+    background: #fff;
+    border-radius: 20px;
     border: none;
-    background: none;
-    color: #2B3674;
-    font-weight: 500;
-    padding: 12px 24px;
-    margin: 0;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
 }
 
-.nav-tab-active {
-    border-bottom: 2px solid #4318FF;
-    color: #4318FF;
+.postbox .hndle {
+    border-bottom: 1px solid #E0E5F2;
+    padding: 16px;
+    color: #2B3674;
+    font-weight: 700;
 }
 
 /* Admin Menu Icons */
-.wowp-icon-dashboard,
-.wowp-icon-posts,
-.wowp-icon-media,
-.wowp-icon-pages,
-.wowp-icon-comments,
-.wowp-icon-appearance,
-.wowp-icon-plugins,
-.wowp-icon-users,
-.wowp-icon-tools,
-.wowp-icon-settings {
+#adminmenu div.wp-menu-image:before {
     color: #2B3674;
-    font-size: 20px;
+}
+
+#adminmenu li.menu-top:hover div.wp-menu-image:before,
+#adminmenu li.opensub > a.menu-top div.wp-menu-image:before {
+    color: #fff;
+}
+
+/* Admin Menu Text */
+#adminmenu li a {
+    color: #2B3674;
+}
+
+#adminmenu li.menu-top:hover > a,
+#adminmenu li.opensub > a.menu-top {
+    color: #fff;
+}
+
+/* Submenu */
+#adminmenu .wp-submenu {
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 10px;
+    padding: 8px;
+}
+
+#adminmenu .wp-submenu a {
+    padding: 8px 12px;
+    margin: 2px 0;
+    border-radius: 8px;
+}
+
+#adminmenu .wp-submenu a:hover {
+    background: #4318FF;
+    color: #fff;
 }
